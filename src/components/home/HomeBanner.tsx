@@ -8,36 +8,36 @@ const HomeBanner: React.FC = () => {
       <Headline>우리의 소프트웨어를 대단하게</Headline>
       <StatsGrid>
         <StatCard>
-          <StatNumber><CountUp start={0} end={56} duration={1} /></StatNumber>
+          <StatNumber><CountUp start={0} end={56} duration={2} /></StatNumber>
           <StatLabel>등록된 회원</StatLabel>
         </StatCard>
         <StatCard>
-          <StatNumber><CountUp start={0} end={24} duration={1.75} /></StatNumber>
+          <StatNumber><CountUp start={0} end={24} duration={2} /></StatNumber>
           <StatLabel>등록된 그룹</StatLabel>
         </StatCard>
         <StatCard>
-          <StatNumber><CountUp start={0} end={68} duration={1.75} /></StatNumber>
+          <StatNumber><CountUp start={0} end={68} duration={2} /></StatNumber>
           <StatLabel>완료된 세미나</StatLabel>
         </StatCard>
         <StatCard>
-          <StatNumber><CountUp start={0} end={379} duration={2.5} /></StatNumber>
+          <StatNumber><CountUp start={0} end={379} duration={2} /></StatNumber>
           <StatLabel>완료된 과제</StatLabel>
         </StatCard>
         <StatCard>
-          <StatNumber><CountUp start={0} end={1248} duration={3.25} /></StatNumber>
+          <StatNumber><CountUp start={0} end={198} duration={2} /></StatNumber>
+          <StatLabel>해결된 질문</StatLabel>
+        </StatCard>
+        <StatCard>
+          <StatNumber><CountUp start={0} end={1248} duration={2} /></StatNumber>
           <StatLabel>해결된 문제</StatLabel>
         </StatCard>
         <StatCard>
-          <StatNumber><CountUp start={0} end={1119} duration={3.25} /></StatNumber>
-          <StatLabel>솔브드 레이팅 평균</StatLabel>
+          <StatNumber><CountUp start={0} end={1119} duration={2} /></StatNumber>
+          <StatLabel>솔브드 절사평균</StatLabel>
         </StatCard>
         <StatCard>
-          <StatNumber><CountUp start={0} end={987} duration={3.25} /></StatNumber>
-          <StatLabel>코포 레이팅 평균</StatLabel>
-        </StatCard>
-        <StatCard>
-          <StatNumber><CountUp start={0} end={5} duration={3.25} /></StatNumber>
-          <StatLabel>수상</StatLabel>
+          <StatNumber><CountUp start={0} end={987} duration={2} /></StatNumber>
+          <StatLabel>코포 절사평균</StatLabel>
         </StatCard>
       </StatsGrid>
     </Block>
