@@ -11,7 +11,8 @@ function MainResponsive({ children, className }: MainResponsiveProps) {
 }
 
 const Block = styled.div`
-  width: 1800px;
+  width: 100%;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 `;

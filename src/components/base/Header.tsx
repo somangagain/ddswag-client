@@ -10,24 +10,65 @@ export type HeaderProps = {
 
 function Header({  }: HeaderProps) {
   return (
-    <Block>
-      <Inner>
-        <HeaderLogo/>
-      </Inner>
-    </Block>
+    <Container>
+      <SectionTop>
+        <Block>
+          <HeaderLogo />
+        </Block>
+      </SectionTop>
+      <SectionDown>
+        <Block>
+          <Link>홈</Link>
+          <Link>소개</Link>
+          <Link>일정</Link>
+          <Link>그룹</Link>
+          <Link>자료실</Link>
+          <Link>회원가입</Link>
+        </Block>
+      </SectionDown>
+    </Container>
   );
 }
 
-const Block = styled.div`
-  height: 4rem;
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
-const Inner = styled(MainResponsive)`
-  height: 100%;
+const SectionTop = styled.div`
+  padding: 0.5rem;
+
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  
+  background: var(--primaryD1);
+  color: white;
 `;
+
+const SectionDown = styled.div`
+  padding: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-contents: space-between;
+  
+  background: var(--primary);
+  color: white;
+`;
+
+const Block = styled(MainResponsive)`
+  display: flex;
+
+  justify-content: center;
+`;
+
+const Link = styled.div`
+  font-weight: 700;
+
+  & + & {
+    margin-left: 0.75rem;
+  }
+  `
 
 
 export default Header;
