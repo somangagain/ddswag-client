@@ -3,6 +3,7 @@
 
 # production
 /build
+certificate
 
 # misc
 .env.development
