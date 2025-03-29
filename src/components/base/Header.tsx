@@ -9,7 +9,7 @@ import {
   Calendar, 
   Users, 
   FolderOpen, 
-  UserPlus 
+  User 
 } from 'lucide-react';
 
 // components
@@ -36,7 +36,7 @@ function Header({  }: HeaderProps) {
           <HeaderLink to="/" icon={Calendar} label="일정" />
           <HeaderLink to="/" icon={Users} label="그룹" />
           <HeaderLink to="/" icon={FolderOpen} label="자료실" />
-          <HeaderLink to="/" icon={UserPlus} label="회원가입" />
+          <HeaderLink to="/" icon={User} label="로그인/가입" />
         </Block>
       </SectionDown>
     </Container>

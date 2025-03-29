@@ -9,19 +9,35 @@ const HomeBanner: React.FC = () => {
       <StatsGrid>
         <StatCard>
           <StatNumber><CountUp start={0} end={56} duration={1} /></StatNumber>
-          <StatLabel>등록된 회원 수</StatLabel>
+          <StatLabel>등록된 회원</StatLabel>
         </StatCard>
         <StatCard>
           <StatNumber><CountUp start={0} end={24} duration={1.75} /></StatNumber>
-          <StatLabel>완료한 세미나 횟수</StatLabel>
+          <StatLabel>등록된 그룹</StatLabel>
         </StatCard>
         <StatCard>
-          <StatNumber><CountUp start={0} end={37} duration={2.5} /></StatNumber>
-          <StatLabel>완료한 과제 수</StatLabel>
+          <StatNumber><CountUp start={0} end={68} duration={1.75} /></StatNumber>
+          <StatLabel>완료된 세미나</StatLabel>
+        </StatCard>
+        <StatCard>
+          <StatNumber><CountUp start={0} end={379} duration={2.5} /></StatNumber>
+          <StatLabel>완료된 과제</StatLabel>
         </StatCard>
         <StatCard>
           <StatNumber><CountUp start={0} end={1248} duration={3.25} /></StatNumber>
-          <StatLabel>해결한 문제 수</StatLabel>
+          <StatLabel>해결된 문제</StatLabel>
+        </StatCard>
+        <StatCard>
+          <StatNumber><CountUp start={0} end={1119} duration={3.25} /></StatNumber>
+          <StatLabel>솔브드 레이팅 평균</StatLabel>
+        </StatCard>
+        <StatCard>
+          <StatNumber><CountUp start={0} end={987} duration={3.25} /></StatNumber>
+          <StatLabel>코포 레이팅 평균</StatLabel>
+        </StatCard>
+        <StatCard>
+          <StatNumber><CountUp start={0} end={5} duration={3.25} /></StatNumber>
+          <StatLabel>수상</StatLabel>
         </StatCard>
       </StatsGrid>
     </Block>
@@ -29,7 +45,7 @@ const HomeBanner: React.FC = () => {
 };
 
 const Block = styled.section`
-  padding: 3rem 1.5rem;
+  padding: 3rem 1rem;
   
   text-align: center;
 
