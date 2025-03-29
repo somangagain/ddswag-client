@@ -1,9 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// icons
+import { 
+  Home,  
+  Info, 
+  Pencil, 
+  Calendar, 
+  Users, 
+  FolderOpen, 
+  UserPlus 
+} from 'lucide-react';
+
 // components
 import MainResponsive from '@components/main/MainResponsive';
 import HeaderLogo from './HeaderLogo';
+import HeaderLink from './HeaderLink';
 
 export type HeaderProps = {
 };
@@ -18,12 +30,13 @@ function Header({  }: HeaderProps) {
       </SectionTop>
       <SectionDown>
         <Block>
-          <Link>홈</Link>
-          <Link>소개</Link>
-          <Link>일정</Link>
-          <Link>그룹</Link>
-          <Link>자료실</Link>
-          <Link>회원가입</Link>
+          <HeaderLink to="/" icon={Home} label="홈" />
+          <HeaderLink to="/" icon={Info} label="소개" />
+          <HeaderLink to="/" icon={Pencil} label="블로그" />
+          <HeaderLink to="/" icon={Calendar} label="일정" />
+          <HeaderLink to="/" icon={Users} label="그룹" />
+          <HeaderLink to="/" icon={FolderOpen} label="자료실" />
+          <HeaderLink to="/" icon={UserPlus} label="회원가입" />
         </Block>
       </SectionDown>
     </Container>
@@ -62,13 +75,7 @@ const Block = styled(MainResponsive)`
   justify-content: center;
 `;
 
-const Link = styled.div`
-  font-weight: 700;
 
-  & + & {
-    margin-left: 0.75rem;
-  }
-  `
 
 
 export default Header;
