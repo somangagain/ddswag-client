@@ -1,8 +1,8 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
 :root {
-  --primary: #1b263b;
-  --primaryD1: #0d1b2a;
+  --primaryL1: #1b263b;
+  --primary: #0d1b2a;
   --systemRed: #d32f2f;
   --systemYellow: #f9a825;
   --systemGreen: #4caf50;

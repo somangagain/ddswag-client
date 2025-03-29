@@ -54,7 +54,7 @@ const SectionTop = styled.div`
   display: flex;
   flex-direction: column;
   
-  background: var(--primaryD1);
+  background: var(--primary);
   color: white;
 `;
 
@@ -65,7 +65,7 @@ const SectionDown = styled.div`
   flex-direction: column;
   justify-contents: space-between;
   
-  background: var(--primary);
+  background: var(--primaryL1);
   color: white;
 `;
 

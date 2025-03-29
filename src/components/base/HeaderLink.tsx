@@ -28,7 +28,7 @@ const Block = styled.div`
   cursor: pointer;
 
   & + & {
-    margin-left: 0.75rem;
+    margin-left: 1rem;
   }
 `;
 

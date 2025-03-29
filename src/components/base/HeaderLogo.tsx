@@ -9,7 +9,7 @@ function HeaderLogo() {
         Daedan SWAG
       </Logo>
       <Vision>
-        Make Software Great
+        실력을 향상하고 교류를 촉진한다
       </Vision>
     </Block>
   );
