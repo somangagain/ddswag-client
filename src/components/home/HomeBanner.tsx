@@ -9,11 +9,11 @@ const HomeBanner: React.FC = () => {
       <StatsGrid>
         <StatCard>
           <StatNumber><CountUp start={0} end={56} duration={1} /></StatNumber>
-          <StatLabel>회원 수</StatLabel>
+          <StatLabel>등록된 회원 수</StatLabel>
         </StatCard>
         <StatCard>
           <StatNumber><CountUp start={0} end={24} duration={1.75} /></StatNumber>
-          <StatLabel>세미나 횟수</StatLabel>
+          <StatLabel>완료한 세미나 횟수</StatLabel>
         </StatCard>
         <StatCard>
           <StatNumber><CountUp start={0} end={37} duration={2.5} /></StatNumber>
@@ -21,7 +21,7 @@ const HomeBanner: React.FC = () => {
         </StatCard>
         <StatCard>
           <StatNumber><CountUp start={0} end={1248} duration={3.25} /></StatNumber>
-          <StatLabel>푼 문제 수</StatLabel>
+          <StatLabel>해결한 문제 수</StatLabel>
         </StatCard>
       </StatsGrid>
     </Block>
