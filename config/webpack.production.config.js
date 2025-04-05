@@ -1,14 +1,14 @@
 const path = require('path');
-const fs = require('fs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: './src/index.tsx',
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
+    path: path.resolve(__dirname, '../dist'),
+    filename: '[name].[contenthash].js',
+    clean: true,
   },
   module: {
     rules: [
@@ -36,21 +36,16 @@ module.exports = {
       template: './public/index.html',
     }),
   ],
-  devServer: {
-    static: {
-      directory: path.join(__dirname, '../public'),
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+        },
+      },
     },
-    allowedHosts: 'all',
-    compress: true,
-    port: 3000,
-    open: true,
-    historyApiFallback: true, 
-    server: {
-      type: 'https',
-      options: {
-      key: fs.readFileSync(path.resolve(__dirname, '../certificate/key.pem')),
-      cert: fs.readFileSync(path.resolve(__dirname, '../certificate/cert.pem')),
-    },
-    }
-  },
+  }
 };
